@@ -1,0 +1,418 @@
+@use"layout";
+@use"boot";
+@use"desktop-style";
+@use"slider";
+
+body {
+    margin: 0;
+    padding: 0;
+    direction: rtl !important;
+}
+
+:root {
+    --main-green: #21aa58;
+    --second-green: #00d170;
+    --custom-gray: #3f3f3f;
+    --white: #fff;
+    --black: #000;
+    --bg-gray: #f2f5f8;
+}
+
+header {
+
+    .desktop-menu {
+        position: fixed;
+        background-color: var(--white);
+        z-index: 999;
+        top: 0 !important;
+
+        // .snapp-logo{
+
+        // }
+
+        .desktop-menu-list {
+            .main-list {
+                list-style: none;
+
+                .main-list-child {
+                    padding: 0 0.7rem 0;
+
+                    .down-icon {
+                        transform: translate(-2px, 2px);
+                        font-size: 0.8rem;
+                    }
+
+                    &>a {
+                        text-decoration: none;
+                        color: var(--custom-gray);
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .super-app-snapp {
+                    .insdie-ul {
+                        z-index: 999;
+                        position: absolute;
+                        list-style: none;
+                        background-color: #fdfdfd;
+                        border: 1px solid #dedede;
+                        border-radius: 9px;
+                        transform: translate(2rem, 0);
+
+                        .inside-ul-child {
+                            a {
+                                text-decoration: none;
+                                color: var(--custom-gray);
+                                font-size: 0.8rem;
+                            }
+
+                            a:hover {
+                                color: var(--second-green);
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+
+                .super-app-snapp:hover {
+                    .insdie-ul {
+                        display: block !important;
+                    }
+                }
+
+                .about-snapp {
+                    .insdie-ul {
+                        z-index: 999;
+                        position: absolute;
+                        list-style: none;
+                        background-color: #fdfdfd;
+                        border: 1px solid #dedede;
+                        border-radius: 9px;
+                        transform: translate(2rem, 0);
+
+                        .inside-ul-child {
+                            a {
+                                text-decoration: none;
+                                color: var(--custom-gray);
+                                font-size: 0.8rem;
+                            }
+
+                            a:hover {
+                                color: var(--second-green);
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+
+                .about-snapp:hover {
+                    .insdie-ul {
+                        display: block !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile-menu {
+        .bg-body-tertiary {
+            background-color: var(--white) !important;
+
+            .container-fluid {
+                .navbar-toggler {
+                    border: none !important;
+                }
+
+                .navbar-toggler:focus {
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+            }
+
+            .dropdown-toggle {
+                font-weight: 600;
+                font-size: 0.9rem;
+                color: var(--black);
+            }
+
+            .dropdown-menu {
+                .dropdown-item {
+                    font-size: 0.8rem;
+                }
+            }
+
+            .nav-item {
+                .nav-link {
+                    font-size: 0.9rem;
+                    color: var(--black);
+                }
+            }
+
+            .green-color {
+                color: var(--second-green) !important;
+            }
+
+            .web-logo {
+                width: 24px !important;
+                height: 24px !important;
+            }
+        }
+    }
+
+}
+
+main{
+    .section-1 {
+        margin-top: 5.5rem;
+    
+        .row {
+            .card-container {
+                background-color: var(--main-green);
+    
+                .card {
+                    background-color: transparent;
+                    border: none;
+                    color: var(--white);
+    
+                    .card-body {
+                        .card-title {
+                            font-size: clamp(1.5rem, 2vw, 2rem);
+                            font-weight: 600;
+                            line-height: 1.5;
+                        }
+    
+                        .card-text {
+                            font-size: 1rem;
+                            line-height: 1.5;
+                        }
+    
+                        .phone-number {
+                            #phone-number {
+                                background-color: transparent;
+                                border: none;
+                                border-bottom: 1px solid var(--white);
+                                color: var(--white);
+                            }
+    
+                            #phone-number:focus-visible {
+                                outline: 0;
+                            }
+    
+                            #phone-number::placeholder {
+                                color: var(--white);
+                                opacity: 0.5;
+                                font-size: 0.75rem;
+                            }
+    
+                            .btn {
+                                background-color: var(--white);
+                                color: var(--main-green);
+                                font-size: 0.8rem;
+                                font-weight: 600;
+                            }
+                        }
+    
+                        .enter-section {
+                            .enter {
+                                font-weight: 600;
+                                font-size: 0.9rem;
+                                ;
+                                color: var(--black);
+                                background-color: var(--white);
+                                padding: 1rem 3rem;
+                            }
+    
+                            .enter:hover {
+                                background-color: #ffffff1a;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .bg-image {
+                background-image: url("../images/desktop-image.jpg");
+                width: 50%;
+                height: auto;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    
+    .section-2 {
+        .row {
+            .download-snapp {
+                .download {
+                    width: 10rem;
+                    height: 3rem;
+                }
+            }
+        }
+    }
+    
+    .section-3 {
+        background-color: var(--bg-gray);
+    
+        .cards-section {
+            width: 95%;
+    
+            .card-container {
+                .card {
+                    // min-height: 10rem !important;
+                    background-color: var(--white);
+                    border: none;
+    
+                    .img-fluid {
+                        width: 62px;
+                        height: 62px;
+                    }
+    
+                    .card-title {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        line-height: 1.5;
+                    }
+    
+                    .card-text {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .section-4 {
+        height: auto;
+        width: 100%;
+    }
+    
+    .section-5 {
+        .row {
+            .text {
+                h2 {
+                    font-size: 1.5rem;
+                    line-height: 1.4;
+                }
+    
+                p {
+                    font-size: 0.8rem;
+                    line-height: 1.8;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+    
+    .section-6 {
+        width: 100%;
+        margin: auto;
+    
+        .row {
+            .card-container {
+                .card {
+                    background-color: transparent;
+                    border: none;
+    
+                    .card-header {
+                        background-color: var(--bg-gray);
+                        border: none;
+    
+                        .card-img-top {
+                            width: 210px;
+                            height: 190px;
+                        }
+                    }
+    
+                    .card-body {
+                        .card-title {
+                            font-size: 1rem;
+                            font-weight: 700;
+                        }
+    
+                        .card-text {
+                            font-size: 0.8rem;
+                            color: var(--custom-gray);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .section-7 {
+        background-color: var(--bg-gray);
+    
+        .card-container {
+            .card {
+                background-color: transparent;
+                border: none;
+    
+                .card-body {
+                    .card-title {
+                        font-size: 20px;
+                        line-height: 1.5;
+                        font-weight: 700;
+                    }
+    
+                    .card-text {
+                        font-size: 0.8rem;
+                    }
+    
+                    .btn {
+                        font-weight: 600;
+                        background-color: var(--second-green);
+                        color: var(--white);
+                        padding: 0.75rem 2rem;
+                    }
+                }
+            }
+        }
+    
+        .video {
+            .snapp-video {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    
+        .my-card-container {
+            .card {
+                background-color: var(--white);
+                border: none;
+                .img-fluid {
+                    width: 120px;
+                    height: 66px;
+                }
+                .card-body {
+                    .card-title {
+                        font-size: 1rem;
+                        font-weight: 700;
+                    }
+    
+                    .card-text {
+                        font-size: 0.8rem;
+                        line-height: 1.6;
+                        color: var(--custom-gray);
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    .nav-container{
+        .link{
+            text-decoration: none;
+            color: var(--custom-gray);
+        }
+    }
+    .icon-container{
+        .icon{
+            font-size: 1.5rem;
+            color: var(--custom-gray);
+        }
+    }
+}

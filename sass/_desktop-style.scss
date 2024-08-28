@@ -1,0 +1,97 @@
+@media(max-width:526px) {
+    .section-3 {
+        .cards-section {
+            .card-container {
+                display: flex !important;
+                align-items: stretch !important;
+
+                .card {
+                    .card-title {
+                        font-size: 0.75rem !important;
+                        font-weight: 700 !important;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:992px) {
+    .enter-section {
+        .enter {
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid var(--white) !important;
+            background-color: transparent !important;
+            color: var(--white) !important;
+        }
+
+        .enter:hover {
+            background-color: #ffffff1a !important;
+        }
+    }
+
+    .section-3 {
+        .cards-section {
+            width: 75% !important;
+
+            .card-container {
+                .card-title {
+                    text-align: start !important;
+                    font-size: 1.2rem !important;
+                }
+
+                .img-fluid-parent {
+                    padding: 0 !important;
+                }
+            }
+        }
+    }
+
+    .section-5 {
+        .text {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 2rem 0 6rem !important;
+
+            h2 {
+                font-size: 1.8rem !important;
+            }
+
+            p {
+                font-size: 0.9rem !important;
+            }
+        }
+    }
+
+    .section-6 {
+        width: 70% !important;
+    }
+
+    .section-7 {
+        .card-container {
+            .card {
+                .card-body {
+                    .card-title {
+                        font-size: 32px !important;
+                    }
+
+                    .card-text {
+                        font-size: 1rem !important;
+                    }
+                }
+            }
+        }
+
+        .my-card-container {
+            .card {
+                .card-body {
+                    padding-left: 1rem !important;
+                    padding-right: 1rem !important;
+                }
+            }
+        }
+    }
+}
